@@ -2,7 +2,7 @@
 let input = "hello";
 
 function countCharacter(input) {
-  return input.split("").reduce((a, b) => (a[b] = (a[b] || 0) + 1));
+  input.split("").reduce((a, b) => (a[b] = (a[b] || 0) + 1));
 }
 
 console.log(countCharacter(input));
