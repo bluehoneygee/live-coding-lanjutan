@@ -2,10 +2,9 @@
 let input = "hello";
 
 function countCharacter(input) {
-  let result = {};
   input.split("").reduce((a, b) => {
     a[b] = (a[b] || 0) + 1;
-    return result;
+    return a;
   });
 }
 console.log(countCharacter(input));
